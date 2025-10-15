@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Cart | Zepto Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo" onclick="window.location.href='index.html'">MINUTO</div>
+    <button class="home-btn" onclick="window.location.href='index.html'">🏠 Home</button>
+  </header>
+
+  <section class="flash-deals">
+    <h2>Your Cart</h2>
+    <div id="cart-items" class="product-grid"></div>
+    <h3 id="total"></h3>
+    <button id="checkout" class="checkout-btn">Proceed to Checkout</button>
+  </section>
+
+<!-- ========== FOOTER SECTION ========== -->
+<footer class="footer">
+    <div class="footer-container">
+      <!-- Popular Searches -->
+      <div class="footer-section popular-searches">
+        <h4>Popular Searches</h4>
+        <p><strong>Products :</strong> Avocado | Strawberry | Pomegranate | Beetroot | Bottle gourd | Potato | Lemon | Blueberry | Papaya | Lettuce</p>
+        <p><strong>Brands :</strong> Yakult | My Muse | Aashirvaad Atta | Too Yumm | Lays | Figaro Olive Oil | Amul | Fortune Oil</p>
+        <p><strong>Categories :</strong> Grocery | Cigarettes | Chips | Curd | Paan shop near me | Fresh fruits | Refined oil</p>
+      </div>
+  
+      <hr class="footer-line" />
+  
+      <!-- Categories -->
+      <div class="footer-section categories">
+        <h4>Categories</h4>
+        <div class="category-grid">
+          <ul>
+            <li>Fruits & Vegetables</li>
+            <li>Baby Food</li>
+            <li>Breakfast & Sauces</li>
+            <li>Cleaning Essentials</li>
+            <li>Homegrown Brands</li>
+          </ul>
+          <ul>
+            <li>Atta, Rice, Oil & Dals</li>
+            <li>Dairy, Bread & Eggs</li>
+            <li>Tea, Coffee & More</li>
+            <li>Home Needs</li>
+            <li>Paan Corner</li>
+          </ul>
+          <ul>
+            <li>Masala & Dry Fruits</li>
+            <li>Cold Drinks & Juices</li>
+            <li>Biscuits</li>
+            <li>Electricals & Accessories</li>
+          </ul>
+          <ul>
+            <li>Sweet Cravings</li>
+            <li>Munchies</li>
+            <li>Makeup & Beauty</li>
+            <li>Hygiene & Grooming</li>
+          </ul>
+          <ul>
+            <li>Frozen Food & Ice Creams</li>
+            <li>Meats, Fish & Eggs</li>
+            <li>Bath & Body</li>
+            <li>Health & Baby Care</li>
+          </ul>
+        </div>
+      </div>
+  
+      <hr class="footer-line" />
+  
+      <!-- Footer Bottom Links -->
+      <div class="footer-bottom">
+        <div class="footer-brand">
+          <h2 class="logo">zepto</h2>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <p>© Zepto Marketplace Private Limited<br>fssai lic no : 11224999000872</p>
+        </div>
+  
+        <div class="footer-links">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Delivery Areas</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Customer Support</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Mojo - a Zepto Blog</a></li>
+          </ul>
+        </div>
+  
+        <div class="footer-links">
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Responsible Disclosure Policy</a></li>
+            <li><a href="#">Sell on Zepto</a></li>
+            <li><a href="#">Deliver with Zepto</a></li>
+            <li><a href="#">Franchise with Zepto</a></li>
+          </ul>
+        </div>
+  
+        <div class="app-links">
+          <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Play Store" /></a>
+          <a href="#"><img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on App Store" /></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- FontAwesome for Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <script src="cart.js"></script>
+</body>
+</html>

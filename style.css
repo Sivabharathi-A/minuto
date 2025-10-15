@@ -1,0 +1,433 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fafafa;
+    color: #333;
+  }
+  
+  /* Header */
+  .header {
+    background: #5c2d91;
+    color: #fff;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.login-btn, .signup-btn, .cart-btn {
+  background-color: #ff4d4d;
+  border: none;
+  padding: 8px 14px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.login-btn:hover, .signup-btn:hover, .cart-btn:hover {
+  background-color: #e63b3b;
+}
+
+  
+  .logo {
+    font-weight: bold;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  
+  .header input {
+    width: 40%;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 6px;
+  }
+  
+  .cart-btn, .home-btn {
+    background: #fff;
+    color: #5c2d91;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 14px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  /* Navigation */
+  .nav {
+    background: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .nav button {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 8px 14px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  .nav button:hover {
+    background: #5c2d91;
+    color: #fff;
+  }
+  
+  /* Banner */
+  .banner {
+    background: linear-gradient(120deg, #a8e063, #56ab2f);
+    text-align: center;
+    color: #fff;
+    padding: 50px 15px;
+    border-radius: 10px;
+    margin: 20px;
+  }
+  
+  .order-btn {
+    background: #fff;
+    color: #56ab2f;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  /* Product Grid */
+  .product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .product {
+    background: white;
+    width: 160px;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.2s;
+  }
+  
+  .product:hover {
+    transform: translateY(-5px);
+  }
+  
+  .product img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .product button {
+    background: #5c2d91;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 6px 10px;
+    cursor: pointer;
+  }
+  
+  /* Section Headings */
+  .flash-deals, .diwali {
+    margin: 30px 20px;
+  }
+  
+  .flash-deals h2, .diwali h2 {
+    color: #5c2d91;
+  }
+  
+  /* Category List */
+  .category-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .category {
+    background: #ffe6b3;
+    padding: 15px;
+    border-radius: 10px;
+    width: 150px;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  /* Footer */
+  .footer {
+    background: #5c2d91;
+    color: #fff;
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 14px;
+  }
+  
+  .footer a {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  /* Checkout Button */
+  .checkout-btn {
+    background: #56ab2f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  /* ========== FOOTER STYLING ========== */
+.footer {
+    background-color: #fff;
+    color: #222;
+    padding: 40px 5%;
+    border-top: 1px solid #e0e0e0;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .footer h4 {
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 15px;
+  }
+  
+  .footer p {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  .footer-line {
+    margin: 30px 0;
+    border: 0;
+    border-top: 1px solid #ddd;
+  }
+  
+  /* Category Grid */
+  .category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 10px;
+  }
+  
+  .category-grid ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .category-grid li {
+    color: #444;
+    font-size: 14px;
+    margin: 4px 0;
+  }
+  
+  /* Footer Bottom */
+  .footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+  }
+  
+  .footer-brand {
+    flex: 1 1 220px;
+  }
+  
+  .logo {
+    color: #d11a5f;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .social-links a {
+    color: #555;
+    font-size: 18px;
+    margin-right: 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .social-links a:hover {
+    color: #d11a5f;
+  }
+  
+  .footer-links {
+    flex: 1 1 200px;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin: 5px 0;
+  }
+  
+  .footer-links a {
+    text-decoration: none;
+    color: #444;
+    font-size: 14px;
+    transition: color 0.3s;
+  }
+  
+  .footer-links a:hover {
+    color: #d11a5f;
+  }
+  
+  /* App Links */
+  .app-links {
+    flex: 1 1 180px;
+  }
+  
+  .app-links img {
+    width: 150px;
+    margin: 8px 0;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .footer-bottom {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .footer-links ul {
+      margin-bottom: 10px;
+    }
+    .app-links img {
+      width: 130px;
+    }
+  }
+
+  /* Diwali category list */
+.diwali .category-list {
+    display: flex;
+    justify-content: center; /* center horizontally */
+    gap: 20px; /* space between categories */
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  
+  .diwali .category {
+    background: #ffd700;
+    padding: 10px 20px;
+    border-radius: 25px; /* pill shape */
+    font-weight: 600;
+    color: #5c2d91;
+    cursor: pointer;
+    user-select: none;
+    box-shadow: 0 2px 5px rgba(255, 174, 0, 0.5);
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+    white-space: nowrap;
+  }
+  
+  .diwali .category:hover {
+    background: #ffae00;
+    color: #fff;
+    transform: scale(1.05);
+  }
+  
+  /* Active category style */
+  .diwali .category.active {
+    background: #5c2d91;
+    color: #ffd700;
+    box-shadow: 0 4px 8px rgba(92, 45, 145, 0.6);
+    transform: scale(1.1);
+  }
+  
+  /* Diwali products grid */
+  #diwali-products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  /* Ensure products align nicely */
+  .diwali-product {
+    background: white;
+    width: 160px;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 12px 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid transparent;
+  }
+  
+  .diwali-product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(255, 174, 0, 0.4);
+    border-color: #ffae00;
+  }
+  
+  .diwali-product img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .diwali-product:hover img {
+    box-shadow: 0 0 12px 3px rgba(255, 174, 0, 0.5);
+  }
+  
+  .diwali-product h4 {
+    color: #5c2d91;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+  
+  .diwali-product p {
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 12px;
+    font-size: 15px;
+  }
+  
+  .diwali-product button {
+    background: #5c2d91;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease;
+  }
+  
+  .diwali-product button:hover {
+    background: #7b4ca8;
+  }
+  .category.active {
+    background-color: #5c2d91;
+    color: white;
+  }
+    

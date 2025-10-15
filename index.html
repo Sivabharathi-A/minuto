@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MINUTO | Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">MINUTO</div>
+    <input type="text" id="search" placeholder="Search for products..." />
+    <div class="header-buttons">
+      <button class="login-btn" onclick="window.location.href='login.html'">Login</button>
+      <button class="signup-btn" onclick="window.location.href='signup.html'">Sign Up</button>
+      <button class="cart-btn" onclick="window.location.href='cart.html'">🛒 Cart</button>
+    </div>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="nav">
+    <button onclick="filterCategory('all')">All</button>
+    <button onclick="filterCategory('electronics')">Electronics</button>
+    <button onclick="filterCategory('fashion')">Fashion</button>
+    <button onclick="filterCategory('beauty')">Beauty</button>
+    <button onclick="filterCategory('home')">Home</button>
+    <button onclick="filterCategory('fresh')">Fresh</button>
+  </nav>
+
+  <!-- Banner -->
+  <section class="banner">
+    <h2>Festive Corner</h2>
+    <p>Get accessories, fresheners & more in 10 mins!</p>
+    <button class="order-btn">Order Now</button>
+  </section>
+
+  <!-- Flash Deals -->
+  <section class="flash-deals">
+    <h2>⚡ Flash Deals (Up to 80% Off)</h2>
+    <div id="deal-items" class="product-grid"></div>
+  </section>
+
+  <!-- Diwali Section -->
+  <section class="diwali">
+    <h2>🎉 Diwali Party Ready</h2>
+    <div class="category-list">
+        <div class="category active" onclick="filterDiwali('all')">All</div>
+        <div class="category" onclick="filterDiwali('Sip & Snack')">Sip & Snack</div>
+        <div class="category" onclick="filterDiwali('Cooking & Hosting')">Cooking & Hosting</div>
+        <div class="category" onclick="filterDiwali('Decor & Lights')">Decor & Lights</div>
+        <div class="category" onclick="filterDiwali('Cafe Specials')">Cafe Specials</div>
+        <div class="category" onclick="filterDiwali('Music & Games')">Music & Games</div>
+      </div>      
+    <div id="diwali-products"  class="product-grid"></div>
+  </section>
+  
+
+  <!-- ========== FOOTER SECTION ========== -->
+<footer class="footer">
+    <div class="footer-container">
+      <!-- Popular Searches -->
+      <div class="footer-section popular-searches">
+        <h4>Popular Searches</h4>
+        <p><strong>Products :</strong> Avocado | Strawberry | Pomegranate | Beetroot | Bottle gourd | Potato | Lemon | Blueberry | Papaya | Lettuce</p>
+        <p><strong>Brands :</strong> Yakult | My Muse | Aashirvaad Atta | Too Yumm | Lays | Figaro Olive Oil | Amul | Fortune Oil</p>
+        <p><strong>Categories :</strong> Grocery | Cigarettes | Chips | Curd | Paan shop near me | Fresh fruits | Refined oil</p>
+      </div>
+  
+      <hr class="footer-line" />
+  
+      <!-- Categories -->
+      <div class="footer-section categories">
+        <h4>Categories</h4>
+        <div class="category-grid">
+          <ul>
+            <li>Fruits & Vegetables</li>
+            <li>Baby Food</li>
+            <li>Breakfast & Sauces</li>
+            <li>Cleaning Essentials</li>
+            <li>Homegrown Brands</li>
+          </ul>
+          <ul>
+            <li>Atta, Rice, Oil & Dals</li>
+            <li>Dairy, Bread & Eggs</li>
+            <li>Tea, Coffee & More</li>
+            <li>Home Needs</li>
+            <li>Paan Corner</li>
+          </ul>
+          <ul>
+            <li>Masala & Dry Fruits</li>
+            <li>Cold Drinks & Juices</li>
+            <li>Biscuits</li>
+            <li>Electricals & Accessories</li>
+          </ul>
+          <ul>
+            <li>Sweet Cravings</li>
+            <li>Munchies</li>
+            <li>Makeup & Beauty</li>
+            <li>Hygiene & Grooming</li>
+          </ul>
+          <ul>
+            <li>Frozen Food & Ice Creams</li>
+            <li>Meats, Fish & Eggs</li>
+            <li>Bath & Body</li>
+            <li>Health & Baby Care</li>
+          </ul>
+        </div>
+      </div>
+  
+      <hr class="footer-line" />
+  
+      <!-- Footer Bottom Links -->
+      <div class="footer-bottom">
+        <div class="footer-brand">
+          <h2 class="logo">MINUTO</h2>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <p>© Zepto Marketplace Private Limited<br>fssai lic no : 11224999000872</p>
+        </div>
+  
+        <div class="footer-links">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Delivery Areas</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Customer Support</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Mojo - a minuto Blog</a></li>
+          </ul>
+        </div>
+  
+        <div class="footer-links">
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Responsible Disclosure Policy</a></li>
+            <li><a href="#">Sell on minuto</a></li>
+            <li><a href="#">Deliver with minuto</a></li>
+            <li><a href="#">Franchise with minuto</a></li>
+          </ul>
+        </div>
+  
+        <div class="app-links">
+          <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Play Store" /></a>
+          <a href="#"><img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on App Store" /></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- FontAwesome for Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <script src="main.js"></script>
+</body>
+</html>
